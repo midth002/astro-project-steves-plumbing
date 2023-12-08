@@ -1,0 +1,22 @@
+{
+  "name": "ecliptic-escape",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.1",
+    "@astrojs/netlify": "^3.1.1",
+    "@astrojs/partytown": "^2.0.2",
+    "@astrojs/prefetch": "^0.4.1",
+    "astro": "^4.0.3",
+    "astro-bootstrap": "^0.6.2",
+    "astro-google-fonts-optimizer": "^0.2.2",
+    "typescript": "^5.3.3"
+  }
+}
