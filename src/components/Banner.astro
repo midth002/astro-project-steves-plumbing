@@ -2,7 +2,6 @@
 import { Image } from 'astro:assets'
 import ContactForm from './ContactForm.astro';
 import banner_image from '../images/design-assets/home-banner-1600.webp';
-import contactForm from '../contactform/index.html';
 
 interface Props {
   banner_title:string;
@@ -26,3 +25,83 @@ const { banner_title, banner_text, banner_span } = Astro.props;
     </div>
   </div>
 </div>
+
+<style>
+  /* ---------------------------------------------------------
+  
+  * Filename:			  banner-area-3.scss
+  * Description: 		Define the layout styles for banner-area-3
+  * Version:				1.0.2
+  * Last Modified:  4.11.2019
+  
+------------------------------------------------------------*/
+.banner { position: relative; width: 100%; height: 600px; background-size: cover; background-position: center; background-repeat: no-repeat; }
+
+@media screen and (max-width: 767px) { .banner { height: 500px; } }
+
+.banner-area.banner-area--3 { position: absolute; top: 50%; left: 0; width: 50%; -webkit-transform: translateY(-25%); -ms-transform: translateY(-25%); transform: translateY(-25%); }
+
+@media screen and (max-width: 991px) { .banner-area.banner-area--3 { width: 65%; } }
+
+@media screen and (max-width: 767px) { .banner-area.banner-area--3 { width: 100%; } }
+
+@media screen and (max-width: 575px) { .banner-area.banner-area--3 { padding: 0 10px; } }
+
+.banner-area.banner-area--3 .banner-area__title { color: white; }
+
+.banner-area.banner-area--3 .banner-area__text { color: white; }
+
+/** BEGIN COMPONENT OVERRIDES HERE **/
+
+.banner{
+	margin:160px 0 100px
+}
+
+.banner .container{
+	position: relative!important;
+}
+
+.banner-area.banner-area--3{
+	background: rgba(0,0,0,0.6);
+	padding:24px 15px 30px 30px;
+	width:  59%;
+	top:39.5%
+}
+
+.banner-form{
+	position: absolute;
+	top:30%;
+	right: 0;
+	-webkit-transform: translateY(-25%);
+	-ms-transform: translateY(-25%);
+	transform: translateY(-25%);
+}
+
+.banner-form .formwrap{
+	display:  block;
+	background:  #ffffff;
+	max-width:  400px;
+	margin:0 0 0 auto;
+	padding:5px;
+	box-shadow:  0px 3px 8px rgba(0,0,0,0.5);
+}
+
+.banner-area.banner-area--3 span,
+.banner-area.banner-area--3 .banner-area__text{
+	font-family:  'Merriweather', serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 2.125rem;
+	color:  #ffffff;
+	margin:  0;
+	text-shadow:  0px 3px 6px rgba(0,0,0,0.7);
+}
+
+.banner-area.banner-area--3 .banner-area__title{
+	font-size: 3.125rem;
+	font-weight: 900;
+	text-transform: none;
+	text-shadow:  0px 3px 6px rgba(0,0,0,0.7);
+}
+
+</style>
