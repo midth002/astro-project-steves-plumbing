@@ -299,7 +299,7 @@ form[action="/Login?returnurl=%2fadmin"] .header.header--6, form[action*="/admin
 	background:  #ffffff;
 	max-width:  400px;
 	margin:0 0 0 auto;
-	padding:  5px 5px 0 5px;
+	padding:5px;
 	box-shadow:  0px 3px 8px rgba(0,0,0,0.5);
 }
 

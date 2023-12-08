@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets'
+import ContactForm from './ContactForm.astro';
 import banner_image from '../images/design-assets/home-banner-1600.webp';
 import contactForm from '../contactform/index.html';
 
@@ -21,7 +22,7 @@ const { banner_title, banner_text, banner_span } = Astro.props;
       <p class="banner-area__text">{banner_text}</p>
     </div>
     <div class="col-md-5 banner-form">
-        <div class="formwrap"></div>
+        <div class="formwrap"><ContactForm /></div>
     </div>
   </div>
 </div>

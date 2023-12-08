@@ -2,28 +2,118 @@
 
 ---
 
-<h2>Contact Us Today</h2>
-<form>
-    <div class="inputwrapper">
-        <input type="text" name="username" />
-    </div>
-      
-    <div class="inputwrapper">
-        <input type="email" name="email" />
-    </div>
-      
-    <div class="inputwrapper">
-        <input type="text" name="Phone Number" />
-    </div>
+<div class="container">
+    <h2>Contact Us Today</h2>
+    <form>
+        <div class="inputwrapper">
+            <input type="text" name="username" placeholder="Name"/>
+        </div>
+          
+        <div class="inputwrapper">
+            <input type="email" name="email" placeholder="Email"/>
+        </div>
+          
+        <div class="inputwrapper">
+            <input type="text" name="Phone Number" placeholder="Phone Number"/>
+        </div>
+        
+        <div class="inputwrapper">
+            <textarea class="textarea" rows="10" cols="50" placeholder="How can we help you?"></textarea>
+        </div>
+        
+       <div class="inputwrapper">
+        <button class="submit">Submit</button>
+       </div>
+      </form>
+</div>
+
+
+  <style>
+
+    .container {
+        background-image: linear-gradient(to bottom, #fff91d , #e20500, #060189);
+	width: 100%;
+	max-width: 400px;
+	float: none;
+	margin: 0 auto;
+	border-radius: 0px;
+    }
+
+    .container form {
+        margin: 0;
+  padding: 10px 0 20px 0;
+  position: relative;
+}
     
-    <div class="inputwrapper">
-        <textarea class="textarea" rows="10" cols="50" placeholder="How can we help you?"></textarea>
-    </div>
-    
-   <div class="inputwrapper">
-    <input type="submit" value="Submit">
-   </div>
-  </form>
+
+    .container h2 {
+        color: #fff;
+  font-size: 2.25rem;
+  text-shadow: none;
+  font-weight: bold;
+  padding: 30px 0 0;
+  text-transform: capitalize;
+  font-family: 'Merriweather', serif !important;
+  font-style: italic;
+  text-shadow: 0px 3px 18px rgba(0, 0, 0, 0.95);
+  text-align:center
+    }
+
+.inputwrapper {
+    display: block;
+    margin: 10px auto 17px;
+    position: relative;
+    width: 85%;
+    text-align: left;
+    color: #fff;
+    line-height: 25px;
+}
+
+.inputwrapper input, .inputwrapper textarea {
+    background: #fff none repeat scroll 0 0;
+  border: medium none;
+  color: #333333;
+  display: block;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 1.125rem;
+  padding: 13px 5px 13px 15px;
+  width:100%;
+  text-transform: none;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.inputwrapper textarea {height:5em}
+
+.submit {
+    font-size: 24px;
+  font-weight: normal;
+  text-transform: none;
+  background: #e00100;
+  width: 100%;
+  color: #fff;
+  padding: 7px 15px 7px 15px;
+  border-radius: 0px;
+  border: 2px solid #fff;
+  margin-bottom: 15px;
+  margin-top: 3px;
+  box-shadow: 0;
+  font-family: 'Merriweather', sans-serif !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.submit:hover {
+    background: #fff;
+  color: #e00100;
+}
+
+
+
+  </style>
 
 
 
@@ -67,4 +157,3 @@
 
 
 
-  
