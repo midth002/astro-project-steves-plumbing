@@ -1,0 +1,158 @@
+---
+import { Image } from "astro:assets";
+import logo from "../images/design-assets/logo.svg";
+import facebookSquareIcon from "../images/design-assets/facebook-square.svg";
+---
+
+<div class="footer footer--1">
+    <div class="container upper">
+        <div class="row">
+            <div class="col-lg-4">
+            <div id="footer-one-pane">
+                <div class="footer-column">
+                  <div class="logo">
+                    <a href="/" title="Steves Plumbing">
+                      <Image
+                        src={logo}
+                        alt="Steve's Plumbing Logo"
+                        title="Steve's Plumbing & Heating"
+                        width="300"
+                        height="107"
+                      />
+                    </a>
+                  </div>
+                  <h4>Main Office</h4>
+                  <div class="phone-number">
+                    <a href="tel:7154211800" title="Call Us" data-phone-number=""
+                      ><i class="fas fa-phone-alt"></i>715-421-1800</a
+                    >
+                  </div>
+                  <div class="address mb-1">
+                    <a
+                      href="https://www.google.com/maps?ll=44.381093,-89.819997&z=14&t=m&hl=en-US&gl=US&mapclient=embed&cid=16383246980631604996"
+                      target="_blank"
+                      title="Find us on Google Maps"
+                    >
+                      <address>1138 6th St. S<br /> Wisconsin Rapids, WI 54494</address>
+                    </a>
+                  </div>
+                  <div class="social-icons">
+                    <a
+                      href="https://www.facebook.com/StevesPlumbingandHeating"
+                      title="Facebook"
+                      target="_blank"
+                    >
+                      <Image
+                        src={facebookSquareIcon}
+                        width="35"
+                        height="35"
+                        alt="Facebook Icon"
+                        class="icon-blue"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+                <div id="footer-two-pane">
+                    <div class="footer-column">
+                      <h3 class="title">Our Services</h3>
+                      <ul class="list">
+                        <li>
+                          <a href="/Plumbing" title="Plumbing" class="link-effect red">Plumbing</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/Plumbing/Drain-Maintenance"
+                            title="Drain Maintenance"
+                            class="link-effect red">Drain Maintenance</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/Heating" title="Heating" class="link-effect red">Heating</a>
+                        </li>
+                        <li>
+                          <a
+                            href="/Air-Conditioning"
+                            title="Air Conditioning"
+                            class="link-effect red">Air Conditioning</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/Plumbing/Emergency-Services"
+                            title="Emergency Services"
+                            class="link-effect red">Emergency Services</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/Why-Us/Financing" title="Financing" class="link-effect red"
+                            >Financing</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+           <div class="col-lg-3">
+            <div id="footer-three-pane">
+                <div class="footer-column">
+                  <h3 class="title">Company Info</h3>
+                  <ul class="list">
+                    <li>
+                      <a href="/Why-Us" title="Why Us" class="link-effect red">Why Us?</a>
+                    </li>
+                    <li>
+                      <a href="/About-Us" title="About Us" class="link-effect red"
+                        >About Us</a>
+                    </li>
+                    <li>
+                      <a
+                        href="/Why-Us/Testimonials"
+                        title="Testimonials"
+                        class="link-effect red">Reviews/Testimonials</a>
+                    </li>
+                    <li>
+                      <a
+                        href="/About-Us/Consumer-Bill-of-Rights"
+                        title="Consumer Bill of Rights"
+                        class="link-effect red">Consumer Bill of Rights</a>
+                    </li>
+                    <li>
+                      <a href="/About-Us/FAQ" title="FAQ" class="link-effect red">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="/About-Us/Careers" title="Careers" class="link-effect red"
+                        >Careers</a>
+                    </li>
+                    <li>
+                      <a href="/Contact-Us" title="Contact Us" class="link-effect red"
+                        >Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="/About-Us/Blog" title="Blog" class="link-effect red">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+           </div>
+              <div class="col-lg-3">
+                <div id="footer-four-pane">
+                    <div class="footer-column">
+                      <a
+                        href="/About-Us/Free-Estimate"
+                        class="button button--primary"
+                        title="Get an Estimate">Get an Estimate</a
+                      >
+                      <a href="/Contact-Us" class="button button--secondary" title="Contact Us"
+                        >Contact Us</a
+                      >
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+</div>
+

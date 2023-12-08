@@ -1,11 +1,49 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 import Banner from "../components/Banner.astro";
+import { Image } from "astro:assets";
+import bkg_faucet from "../images/design-assets/needus-bg.webp"
 ---
 
-<Layout title="Steve's Plumbing & Heating - Air Conditioning Services - Wisconsin Rapids WI">
-	<Banner banner_span="We Can Take Care of All Your" banner_title="Plumbing, Heating, & A/C" banner_text="Needs! 100% Satisfaction Guarantee!"/>
-	</main>
+<Layout
+  title="Steve's Plumbing & Heating - Air Conditioning Services - Wisconsin Rapids WI"
+>
+  <Banner
+    banner_span="We Can Take Care of All Your"
+    banner_title="Plumbing, Heating, & A/C"
+    banner_text="Needs! 100% Satisfaction Guarantee!"
+  />
+  <div class="feature feature--1 relative">
+	<picture class="bg-img">
+		<Image src={bkg_faucet} alt="Background Image" title="Steve's Plumbing" />
+	</picture>
+		
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="feature__title">Here When You Need Us</h2>
+          <p class="feature__text font-bold">
+            Steve’s Plumbing & Heating offers a full range of top quality
+            plumbing services to meet all of your household needs. We’ll send a
+            fully trained technician to your home with a truck stocked with
+            1000s of parts, which means that the repair can be done right then
+            and there while we are at your home. Our technicians are prepared to
+            handle any plumbing problem or emergency, 24 hours a day, 7 days a
+            week, 365 days a year. What's more, you never have to worry about
+            the bill. You decide what services you want done, and we quote you a
+            price with our Straightforward Pricing - you pay what we quote,
+            guaranteed.
+          </p>
+          <div class="feature__buttons">
+            <a
+              href="tel:7154211800"
+              class="button button--secondary"
+              title="Contact Us"
+              data-phone-number="">Give Us a Call Today</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>
-
