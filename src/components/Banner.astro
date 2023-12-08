@@ -14,7 +14,7 @@ const { banner_title, banner_text, banner_span } = Astro.props;
 ---
 
 <div class="banner">
-    <Image src={banner_image} alt="Home Banner" class="banner-image"/>
+    <Image src={banner_image} alt="Home Banner" class="banner-image" loading="eager"/>
   <div class="container position-relative" style="height: 100%">
     <div class="banner-area banner-area--3">
       <span>{banner_span}</span>
