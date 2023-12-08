@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets'
-import banner_image from '../images/design-assets/home-banner-1600.webp'
+import banner_image from '../images/design-assets/home-banner-1600.webp';
+import contactForm from '../contactform/index.html';
 
 interface Props {
   banner_title:string;
@@ -12,7 +13,7 @@ const { banner_title, banner_text, banner_span } = Astro.props;
 ---
 
 <div class="banner">
-    <Image src={banner_image} alt="Home Banner"/>
+    <Image src={banner_image} alt="Home Banner" class="banner-image"/>
   <div class="container position-relative" style="height: 100%">
     <div class="banner-area banner-area--3">
       <span>{banner_span}</span>
@@ -20,6 +21,7 @@ const { banner_title, banner_text, banner_span } = Astro.props;
       <p class="banner-area__text">{banner_text}</p>
     </div>
     <div class="col-md-5 banner-form">
+        <div class="formwrap"></div>
     </div>
   </div>
 </div>

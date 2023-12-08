@@ -271,7 +271,7 @@ form[action="/Login?returnurl=%2fadmin"] .header.header--6, form[action*="/admin
 /** BEGIN COMPONENT OVERRIDES HERE **/
 
 .banner{
-	margin:164px 0 100px
+	margin:160px 0 100px
 }
 
 .banner .container{
