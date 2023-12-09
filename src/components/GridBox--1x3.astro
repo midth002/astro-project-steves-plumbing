@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  box__header:string;
+  box__image:string;
+  box__image__alt:string;
+  box__list:Array<string>;
+  box__button:string;
+  box__button__title:string;
+}
+
+const {box__header, box__image, box__image__alt, box__list, box__button, box__button__title} = Astro.props;
+---
+
+
+
+<div class="grid-boxes grid-boxes-1x3--2">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="col-md-6 col-sm-6 col-lg-4">
+              <div class="box__header">
+              
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
